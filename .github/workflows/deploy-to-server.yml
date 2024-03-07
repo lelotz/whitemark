@@ -20,6 +20,8 @@ jobs:
           port: ${{ secrets.PORT }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
+          use_insecure_cipher: true
+
           script: |
             cd ${{ secrets.PATH }}
             php artisan down
