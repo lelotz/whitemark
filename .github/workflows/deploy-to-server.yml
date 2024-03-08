@@ -20,7 +20,6 @@ jobs:
           port: ${{ secrets.PORT }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          fingerprint : ${{secrets.DEV_KEY}}
           
           script: |
             cd ${{ secrets.PATH }}
